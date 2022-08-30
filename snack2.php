@@ -1,4 +1,19 @@
 <?php
+
+$name = $_GET['name'];
+/* $mail = $_GET['mail'];
+$age = $_GET['age']; */
+$access_message = '';
+echo strlen($name);
+ if (strlen($name) > 3 ){
+    $access_message = 'accesso riuscito';
+
+ } else {
+    $access_message = 'accesso negato';
+ }
+ ; 
+ echo $access_message
+
 ?>
 
 <!DOCTYPE html>
@@ -10,6 +25,7 @@
     <title>Document</title>
 </head>
 <body>
+
     
 </body>
 </html>

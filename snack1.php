@@ -47,9 +47,9 @@ var_dump ($games);
     <ul>
         <?php for($i = 0; $i< count($games); $i++):?>
         <li>
-            <h1>Home Team: <?php echo $games[$i]['home_team'];?> </h1>
-            <h3>Visiting Team: <?php echo $games[$i]['visiting_team'];?></h3>
-            <span>Score: <?php echo $games[$i]['score'];?></span>
+            <h1>Home Team: <?= $games[$i]['home_team'];?> </h1>
+            <h3>Visiting Team: <?= $games[$i]['visiting_team'];?></h3>
+            <span>Score: <?=  $games[$i]['score'];?></span>
         </li>
         <?php endfor;?>
     </ul>
