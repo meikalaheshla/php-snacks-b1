@@ -1,18 +1,19 @@
 <?php
 
 $name = $_GET['name'];
-/* $mail = $_GET['mail'];
-$age = $_GET['age']; */
+$mail = $_GET['mail'];
+$age = $_GET['age'];  
 $access_message = '';
-echo strlen($name);
- if (strlen($name) > 3 ){
+//  echo strlen($name);
+ 
+ if (strlen($name) > 3 && str_contains($mail , '@') && str_contains($mail , '.') && is_numeric($age)){
     $access_message = 'accesso riuscito';
 
  } else {
     $access_message = 'accesso negato';
  }
  ; 
- echo $access_message
+  echo $access_message
 
 ?>
 
@@ -25,6 +26,15 @@ echo strlen($name);
     <title>Document</title>
 </head>
 <body>
+    <div>
+      <!--   <label for="name">Inserisci il tuo nome </label>
+        <input type="text" id="name" name="name" required />
+        <label for="mail">Inserisci la tua mail </label>
+        <input type="email" id="mail" name="mail" required />
+        <label for="age">Inserisci la tua età  </label>
+        <input type="number" id="age" name="age" required /> -->
+        
+    </div>
 
     
 </body>
