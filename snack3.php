@@ -39,7 +39,7 @@ $posts = [
         ]
     ],
 ];
- /* 
+ 
  foreach($posts as $key => $value){
      echo $key;
     foreach($value as $sub_key => $sub_val){
@@ -56,7 +56,7 @@ $posts = [
  }
  
 
-  */
+  
  
 ?>
 
